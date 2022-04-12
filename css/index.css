@@ -1,0 +1,165 @@
+body {
+   font-family: Arial, Helvetica, sans-serif; 
+   font-size: x-small;
+}
+
+.container-fluid {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+#header, #footer {
+    background-color: #742b33;
+    color: white;
+    padding-left: 7px;
+}
+
+#head-h4 {
+    margin: 0px;
+}
+
+#footer {
+    font-size:x-small;
+}
+
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#assets {
+    grid-area: lheader;
+    margin-left: 7px;
+    padding-left: 7px;
+}
+
+#liabilities {
+    grid-area: rheader;
+    padding-left: 7px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "lheader mt1 mt2 rheader mt3 mt4"
+        "curAss . . curLiab . ."
+        "cash cash cash . addcurliab ."
+        "inventory inventory inventory . . ."
+        "supplies supplies supplies . . ."
+        "tempinvest tempinvest tempinvest . . ."
+        "totcurass totcurass totcurass . . ."
+        "invpropequip . . lngtrmliab  . ."
+        ". addinvpropequip . . addlngtrmliab ."
+        "intangibles . . totalposition . .";
+    background-color: #e3b343;
+}
+
+.assliab {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
+#mt1 {
+    grid-area: mt1;
+}
+
+#mt2 {
+    grid-area: mt2;
+}
+
+#mt3 {
+    grid-area: mt3;
+}
+
+#mt4 {
+    grid-area: mt4;
+}
+
+#curAss {
+    grid-area: curAss;
+    padding-left: 14px;
+}
+
+#curLiab {
+    grid-area: curLiab;
+    padding-left: 7px;
+}
+
+.row-pad {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cash {
+    grid-area: cash;
+}
+
+#inventory {
+    grid-area: inventory;
+}
+
+#supplies {
+    grid-area: supplies;
+}
+
+#tempinvest {
+    grid-area: tempinvest;
+    padding-bottom: 10px;
+}
+
+#totcurass {
+    grid-area: totcurass;
+    padding-bottom: 10px;
+}
+
+.row-justify {
+    justify-self: end;
+}
+
+#addcurliab {
+    grid-area: addcurliab;
+}
+
+#btn-addcurliab {
+    font-size: x-small;
+}
+
+#invpropequip {
+    grid-area: invpropequip;
+    padding-left: 14px;
+}
+
+#lngtrmliab {
+    grid-area: lngtrmliab;
+    padding-left: 7px;
+}
+
+#addinvpropequip {
+    grid-area: addinvpropequip;
+    padding-bottom: 10px;
+}
+
+#addlngtrmliab {
+    grid-area: addlngtrmliab;
+}
+
+#btn-addinvpropequip, #btn-addlngtrmliab {
+    font-size: x-small;
+}
+
+#intangibles {
+    grid-area: intangibles;
+    padding-left: 14px;
+}
+
+#totalposition {
+    grid-area: totalposition;
+    font-size: large;
+    padding-left: 7px;
+}
