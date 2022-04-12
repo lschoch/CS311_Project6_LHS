@@ -46,11 +46,7 @@ body {
     grid-template-areas: 
         "lheader mt1 mt2 rheader mt3 mt4"
         "curAss . . curLiab . ."
-        "cash cash cash . addcurliab ."
-        "inventory inventory inventory . . ."
-        "supplies supplies supplies . . ."
-        "tempinvest tempinvest tempinvest . . ."
-        "totcurass totcurass totcurass . . ."
+        ". addcurass . . addcurliab ."
         "invpropequip . . lngtrmliab  . ."
         ". addinvpropequip . . addlngtrmliab ."
         "intangibles . . totalposition . ."
@@ -119,18 +115,19 @@ body {
 #totcurass {
     grid-area: totcurass;
     padding-bottom: 10px;
+    text-decoration: overline underline;
 }
 
 .row-justify {
     justify-self: end;
 }
 
-#addcurliab {
-    grid-area: addcurliab;
+#addcurass {
+    grid-area: addcurass;
 }
 
-#btn-addcurliab {
-    font-size: x-small;
+#addcurliab {
+    grid-area: addcurliab;
 }
 
 #invpropequip {
@@ -150,10 +147,6 @@ body {
 
 #addlngtrmliab {
     grid-area: addlngtrmliab;
-}
-
-#btn-addinvpropequip, #btn-addlngtrmliab {
-    font-size: x-small;
 }
 
 #intangibles {
@@ -192,7 +185,15 @@ body {
     padding-bottom: 20px;
 }
 
-#btn-addintangibles {
+input[type=text] {
+    text-align: right;
     font-size: x-small;
 }
 
+button {
+    font-size: x-small;
+}
+
+.button-justify {
+    justify-self: center;
+}
