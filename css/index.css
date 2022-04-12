@@ -53,7 +53,10 @@ body {
         "totcurass totcurass totcurass . . ."
         "invpropequip . . lngtrmliab  . ."
         ". addinvpropequip . . addlngtrmliab ."
-        "intangibles . . totalposition . .";
+        "intangibles . . totalposition . ."
+        ". addintangibles . totalassets . ."
+        ". . . totalliabilities . ."
+        ". . . position . .";
     background-color: #e3b343;
 }
 
@@ -162,4 +165,34 @@ body {
     grid-area: totalposition;
     font-size: large;
     padding-left: 7px;
+    padding-bottom: 10px;
 }
+
+#addintangibles {
+    grid-area: addintangibles;
+    justify-self: center;
+}
+
+#totalassets {
+    grid-area: totalassets;
+    padding-left: 7px;
+}
+
+#totalliabilities {
+    grid-area: totalliabilities;
+    padding-left: 7px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+#position {
+    grid-area: position;
+    padding-left: 7px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+#btn-addintangibles {
+    font-size: x-small;
+}
+
