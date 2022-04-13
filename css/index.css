@@ -6,7 +6,12 @@ body {
 .container-fluid {
     display: flex;
     flex-flow: column wrap;
+}
 
+img {
+    width: 60px;
+    float: left;
+    padding-top: 10px;
 }
 
 #header, #footer {
@@ -16,12 +21,15 @@ body {
 }
 
 #head-h4 {
-    margin: 0px;
+   /*  margin-left: 5px; */
+    font-size:small;
 }
 
 #header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #assets {
