@@ -62,13 +62,17 @@ body {
 }
 
 #tempinvest {
-    padding-bottom: 10px;
+    align-self: bottom;
 }
 
-#totcurass {
-    padding-bottom: 10px;
+#totcurass, #totcurliab, #totinvpropequip {
     text-decoration: overline underline;
     justify-self: end;
+    padding-top: 12px;
+}
+
+#totlngtrmliab, #totintangibles {
+    text-decoration: overline underline;
 }
 
 .row-justify {
@@ -124,4 +128,25 @@ input[type=text] {
 
 button {
     font-size: x-small;
+}
+
+#acctpayable, #notespayable, #intpayable, #wagespayable, #accruedexpenses {
+    padding-right: 15px;
+}
+
+#totcurliab, #bondspayable, #ntspayable, #totlngtrmliab {
+    padding-right: 15px;
+}
+
+#accruedexpenses {
+    margin: 0px;
+}
+
+#totalassets, #totalliabilities, #position {
+    font-size: small;
+}
+
+#calcposition {
+    justify-self: start;
+    padding-left: 7px;
 }
