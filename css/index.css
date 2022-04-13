@@ -19,23 +19,17 @@ body {
     margin: 0px;
 }
 
-#footer {
-    font-size:x-small;
-}
-
 #header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #assets {
-    grid-area: lheader;
     margin-left: 7px;
     padding-left: 7px;
 }
 
 #liabilities {
-    grid-area: rheader;
     padding-left: 7px;
 }
 
@@ -43,16 +37,6 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: 
-        "lheader mt1 mt2 rheader mt3 mt4"
-        "curAss . . curLiab . ."
-        ". addcurass . . addcurliab ."
-        "invpropequip . . lngtrmliab  . ."
-        ". addinvpropequip . . addlngtrmliab ."
-        "intangibles . . totalposition . ."
-        ". addintangibles . totalassets . ."
-        ". . . totalliabilities . ."
-        ". . . position . .";
     background-color: #e3b343;
 }
 
@@ -64,29 +48,11 @@ body {
     font-size: smaller;
 }
 
-#mt1 {
-    grid-area: mt1;
-}
-
-#mt2 {
-    grid-area: mt2;
-}
-
-#mt3 {
-    grid-area: mt3;
-}
-
-#mt4 {
-    grid-area: mt4;
-}
-
-#curAss {
-    grid-area: curAss;
+#curass {
     padding-left: 14px;
 }
 
-#curLiab {
-    grid-area: curLiab;
+#curliab {
     padding-left: 7px;
 }
 
@@ -95,91 +61,57 @@ body {
     padding-bottom: 10px;
 }
 
-#cash {
-    grid-area: cash;
-}
-
-#inventory {
-    grid-area: inventory;
-}
-
-#supplies {
-    grid-area: supplies;
-}
-
 #tempinvest {
-    grid-area: tempinvest;
     padding-bottom: 10px;
 }
 
 #totcurass {
-    grid-area: totcurass;
     padding-bottom: 10px;
     text-decoration: overline underline;
+    justify-self: end;
 }
 
 .row-justify {
     justify-self: end;
 }
 
-#addcurass {
-    grid-area: addcurass;
-}
-
-#addcurliab {
-    grid-area: addcurliab;
-}
-
 #invpropequip {
-    grid-area: invpropequip;
     padding-left: 14px;
 }
 
 #lngtrmliab {
-    grid-area: lngtrmliab;
     padding-left: 7px;
 }
 
 #addinvpropequip {
-    grid-area: addinvpropequip;
     padding-bottom: 10px;
 }
 
-#addlngtrmliab {
-    grid-area: addlngtrmliab;
-}
-
 #intangibles {
-    grid-area: intangibles;
     padding-left: 14px;
 }
 
 #totalposition {
-    grid-area: totalposition;
     font-size: large;
     padding-left: 7px;
     padding-bottom: 10px;
 }
 
-#addintangibles {
-    grid-area: addintangibles;
+#addintangibles, .button-justify {
     justify-self: center;
 }
 
 #totalassets {
-    grid-area: totalassets;
     padding-left: 7px;
 }
 
 #totalliabilities {
-    grid-area: totalliabilities;
     padding-left: 7px;
     padding-top: 2px;
     padding-bottom: 10px;
 }
 
 #position {
-    grid-area: position;
     padding-left: 7px;
     padding-top: 2px;
     padding-bottom: 20px;
@@ -192,8 +124,4 @@ input[type=text] {
 
 button {
     font-size: x-small;
-}
-
-.button-justify {
-    justify-self: center;
 }
