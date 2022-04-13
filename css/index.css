@@ -3,15 +3,15 @@ body {
    font-size: x-small;
 }
 
-.container-fluid {
+.container-flex {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 }
 
 img {
     width: 60px;
     float: left;
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 #header, #footer {
@@ -21,12 +21,11 @@ img {
 }
 
 #head-h4 {
-   /*  margin-left: 5px; */
     font-size:small;
 }
 
 #header {
-    padding-top: 5px;
+    /* padding-top: 15px; */
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
