@@ -1,4 +1,5 @@
 window.onload=function(){
+    // Onload begin building the grid with the static elements from index.html.
     const assets = document.getElementById("assets");
     assets.style.gridArea = "1/1/2/4";
     const liab = document.getElementById("liabilities");
@@ -39,8 +40,9 @@ const addInvPropEquipBtn = document.getElementById("btn-addinvpropequip");
 const addLngTrmLiabBtn = document.getElementById("btn-addlngtrmliab");
 const addIntangiblesBtn = document.getElementById("btn-addintangibles");
 const calcPositionBtn = document.getElementById("btn-calcposition");
-var totlcurass, totlcurliab, totlinvpropequip, totllngtrmliab, totlintangibles; /* need these as global variables so their values
-can be accessed by all functions */
+/* need these as global variables so their values can be accessed by 
+the calcPosition function.*/
+var totlcurass, totlcurliab, totlinvpropequip, totllngtrmliab, totlintangibles; 
 
 addCurrentAssetsEvents();
 addCurrentLiabilitiesEvents();
@@ -157,6 +159,8 @@ function addCurAss() {
     newDiv5.setAttribute("class", "row-justify");
     parentDiv.insertBefore(newDiv5, nextDiv);
     newDiv5.style.gridArea = "7/2/8/4";
+    /* Create the button to calculate position when all components are 
+    available.*/
     if (typeof totlcurass === 'number' && typeof totlcurliab === 'number' &&
     typeof totlintangibles === 'number' && typeof totlinvpropequip === 'number' &&
     typeof totllngtrmliab === 'number') {
@@ -261,6 +265,8 @@ function addCurLiab() {
      newDiv6.setAttribute("class", "row-justify");
      parentDiv.insertBefore(newDiv6, nextDiv);
      newDiv6.style.gridArea = "8/5/9/7";
+     /* Create the button to calculate position when all components are 
+    available.*/
      if (typeof totlcurass === 'number' && typeof totlcurliab === 'number' &&
     typeof totlintangibles === 'number' && typeof totlinvpropequip === 'number' &&
     typeof totllngtrmliab === 'number') {
@@ -348,6 +354,8 @@ function addInvPropEquip () {
     newDiv6.setAttribute("class", "row-justify");
     parentDiv.insertBefore(newDiv6, nextDiv);
     newDiv6.style.gridArea = "15/2/16/4";
+    /* Create the button to calculate position when all components are 
+    available.*/
     if (typeof totlcurass === 'number' && typeof totlcurliab === 'number' &&
     typeof totlintangibles === 'number' && typeof totlinvpropequip === 'number' &&
     typeof totllngtrmliab === 'number') {
@@ -402,6 +410,8 @@ function addLngTrmLiab() {
     newDiv6.setAttribute("class", "row-justify");
     parentDiv.insertBefore(newDiv6, nextDiv);
     newDiv6.style.gridArea = "14/5/15/7";
+    /* Create the button to calculate position when all components are 
+    available.*/
     if (typeof totlcurass === 'number' && typeof totlcurliab === 'number' &&
     typeof totlintangibles === 'number' && typeof totlinvpropequip === 'number' &&
     typeof totllngtrmliab === 'number') {
@@ -456,6 +466,8 @@ function addIntangibles () {
     newDiv6.setAttribute("class", "row-justify");
     parentDiv.insertBefore(newDiv6, nextDiv);
     newDiv6.style.gridArea = "24/2/25/4";
+    /* Create the button to calculate position when all components are 
+    available.*/
     if (typeof totlcurass === 'number' && typeof totlcurliab === 'number' &&
     typeof totlintangibles === 'number' && typeof totlinvpropequip === 'number' &&
     typeof totllngtrmliab === 'number') {
